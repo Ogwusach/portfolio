@@ -1,0 +1,386 @@
+    /* Add your custom styles here */
+
+    /* General styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a;
+    }
+    section {
+      padding: 50px 0;
+    }
+
+    /* Home section styles */
+    #home {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Features section styles */
+    #features {
+      background-color: #0a0a0a;
+    }
+    .feature {
+      text-align: center;
+    }
+
+    /* Projects section styles */
+    #projects {
+      background-color: #0a0a0a;
+    }
+    .project {
+      padding: 20px;
+    }
+
+    /* Skills section styles */
+    #skills {
+      background-color: #0a0a0a;
+    }
+    .skill {
+      text-align: center;
+    }
+
+    /* About section styles */
+    #about {
+      background-color: #fff;
+    }
+    .about-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .about-text {
+      flex: 1;
+      padding: 20px;
+    }
+    .about-image {
+      flex: 1;
+    }
+
+    /* Contact section styles */
+    #contact {
+      background-color: #f4f4f4;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+
+/* Sidebar Styles */
+
+
+
+
+
+
+/* Add your sidebar styles here */
+
+
+/* Add your sidebar styles here */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #0a0a0a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.pusher {
+  margin-left: 0;
+  transition: 0.5s;
+}
+
+.pusher.active {
+  margin-left: 250px;
+}
+
+/* Pusher Styles */
+.pusher {
+  margin-left: 0;
+  transition: 0.5s;
+}
+
+.pusher.active {
+  margin-left: 250px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.pusher {
+  transition: margin-left 0.3s, opacity 0.3s, box-shadow 0.3s;
+  overflow-x: hidden;
+}
+
+.pusher.sidebar-open {
+  margin-left: 250px;
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.active {
+  left: 0;
+}
+/* Style for Contact Us Section */
+#contactUsSection {
+  color: #fff;
+}
+
+
+/* Home section styles */
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+}
+
+.hero-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Place text above the image */
+}
+
+.text-content h1 {
+  font-size: 3em;
+}
+
+.text-content p {
+  font-size: 1.2em;
+}
+
+    /* Header Styles */
+    header {
+        font-family: 'Arial', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        color: #fff; /* Set your desired text color */
+        text-align: center;
+        padding: 20px; /* Adjust padding as needed */
+        background-color: #000; /* Set darkest black background color */
+        display: inline-block;
+        position: relative;
+        transform: skew(-15deg); /* Add skew transformation for slanting effect */
+        overflow: hidden; /* Hide overflow for the effect */
+      }
+
+    header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px; /* Set your desired line width */
+        height: 50px; /* Set your desired line height */
+        background-color: #fff; /* Set your desired line color */
+        transition: height 0.3s ease; /* Add a smooth transition effect */
+    }
+
+    /* Additional styles for the effect */
+    header:hover::after {
+        height: 80px; /* Adjust the expanded height on hover */
+    }
+
+
+/* Custom Styles for Features Section */
+#features {
+  background-color: #0a0a0a; /* Set your desired background color */
+  padding: 80px 0;
+}
+
+#features .card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
+}
+
+#features .card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Custom Styles for Projects Section */
+#projects {
+  background-color: #fff; /* Set your desired background color */
+  padding: 80px 0;
+}
+
+#projects .card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
+}
+
+#projects .card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+
+
+/* Custom Styles for Skills Section */
+#skills {
+  background-color: #f9f9f9; /* Set your desired background color */
+  padding: 80px 0;
+}
+
+#skills .card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
+}
+
+#skills .card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Custom Styles for About Section */
+#about {
+  background-color: #fff; /* Set your desired background color */
+  padding: 80px 0;
+}
+
+#about .about-image img {
+  width: 100%; /* Make the image responsive */
+}
+
+
+
+
+/* Custom Styles for Contact Section */
+#contact {
+  background-color: #111; /* Darkest background color */
+  padding: 80px 0;
+  color: #fff; /* Set your desired text color */
+}
+
+#contact .column {
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 400px;
+}
+
+#contact button {
+  background-color: #4caf50; /* Set your desired button color */
+  color: #fff; /* Set your desired button text color */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect on hover */
+}
+
+#contact button:hover {
+  background-color: #45a049; /* Set your desired button color on hover */
+}
+
+#contact .social-links {
+  margin-top: 20px;
+}
+
+#contact .social-links a {
+  margin-right: 10px;
+}
+
+#contact .social-links .button {
+  background-color: #333; /* Set your desired social media button color */
+  color: #fff; /* Set your desired social media button text color */
+}
+
+#contact .social-links .button:hover {
+  background-color: #555; /* Set your desired social media button color on hover */
+}
+
+#contact a {
+  color: #4caf50; /* Set your desired link color */
+}
+
+#contact a:hover {
+  color: #45a049; /* Set your desired link color on hover */
+}
+
+#contact #openMap {
+  background-color: #555; /* Set your desired map button color */
+  color: #fff; /* Set your desired map button text color */
+}
+
+#contact #openMap:hover {
+  background-color: #777; /* Set your desired map button color on hover */
+}
+
+  /* Add custom styles here */
+    .dark-divider {
+      border-top: 2px solid #333; /* Set your desired darker color */
+      margin: 20px 0; /* Set your desired margin */
+    }
+
+
+
+
+  /* Add your custom styles here */
+
+  #toggleSidebar {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    font-size: 24px; /* Set your desired font size */
+        padding: 20px; /* Adjust padding as needed */
+        border-radius: 70%; /* Optional: Add border-radius for a rounded button */
+    cursor: pointer;
+    color: #333; /* Set your desired text color */
+    background-color: #fff; /* Set your desired background color */
+    padding: 10px;
+    border: 1px solid #333; /* Set your desired border color */
+    border-radius: 5px; /* Set your desired border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+
+  /* Adjust styles on hover if needed */
+  #toggleSidebar:hover {
+    background-color: #f0f0f0; /* Set your desired background color on hover */
+  }
+
+
+
+
+
+
+
+    }
